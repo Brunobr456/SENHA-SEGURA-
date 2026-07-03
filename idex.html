@@ -1,1 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinador de Senhas Seguras</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+<h1>🔒 Treinador de Senhas Seguras</h1>
+
+<p>
+Aprenda a criar senhas fortes utilizando critérios matemáticos e boas práticas de segurança digital.
+</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Digite sua senha</h2>
+
+<input
+type="password"
+id="senha"
+placeholder="Digite sua senha"
+oninput="analisarSenha()"
+>
+
+<button onclick="mostrarSenha()">
+👁 Mostrar/Ocultar
+</button>
+
+<button onclick="gerarSenha()">
+🎲 Gerar Senha Forte
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Força da Senha</h2>
+
+<div class="barra">
+
+<div id="progresso"></div>
+
+</div>
+
+<h3 id="nivel">
+Aguardando...
+</h3>
+
+<p id="pontuacao">
+Pontuação: 0 / 100
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Critérios</h2>
+
+<ul>
+
+<li id="c1">
+❌ Pelo menos 8 caracteres
+</li>
+
+<li id="c2">
+❌ Letra maiúscula
+</li>
+
+<li id="c3">
+❌ Letra minúscula
+</li>
+
+<li id="c4">
+❌ Número
+</li>
+
+<li id="c5">
+❌ Símbolo especial
+</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Comparação</h2>
+
+<table>
+
+<tr>
+
+<th>Senha</th>
+
+<th>Resultado</th>
+
+</tr>
+
+<tr>
+
+<td>123456</td>
+
+<td>Muito Fraca</td>
+
+</tr>
+
+<tr>
+
+<td>abcdef</td>
+
+<td>Fraca</td>
+
+</tr>
+
+<tr>
+
+<td>Jose123</td>
+
+<td>Média</td>
+
+</tr>
+
+<tr>
+
+<td>Jose123@</td>
+
+<td>Forte</td>
+
+</tr>
+
+<tr>
+
+<td>J0s3ph3@2026!</td>
+
+<td>Muito Forte</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Por que senhas fortes são importantes?</h2>
+
+<p>
+
+Quanto maior o número de caracteres e quanto maior a variedade entre letras, números e símbolos,
+maior será a quantidade de combinações possíveis.
+
+Isso aumenta exponencialmente a dificuldade para ataques de força bruta.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Dicas</h2>
+
+<ul>
+
+<li>✔ Nunca use 123456</li>
+
+<li>✔ Nunca use sua data de nascimento</li>
+
+<li>✔ Nunca use seu nome</li>
+
+<li>✔ Misture letras, números e símbolos</li>
+
+<li>✔ Use pelo menos 12 caracteres</li>
+
+<li>✔ Não reutilize senhas</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<footer>
+
+Projeto desenvolvido em HTML • CSS • JavaScript
+
+</footer>
+
+</body>
+
+</html>
